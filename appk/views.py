@@ -41,6 +41,13 @@ def recherche(request):
 
         print(prec)
         print(rapp)
+
+    else:
+        resultats_recherche_stripped=[]
+        prec=0.0
+        rapp=0.0
+
+
    
 
     return render(request, 'recherche.html', {'query': query, 'resultats_recherche': resultats_recherche_stripped, 'prec': prec, 'rapp': rapp})
