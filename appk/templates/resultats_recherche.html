@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultats de la Recherche</title>
+</head>
+<body>
+    <h1>Résultats de la Recherche</h1>
+
+    <h2>Métriques</h2>
+    <p>Precision: {{ prec }}</p>
+    <p>Rappel: {{ rapp }}</p>
+
+    <h2>Résultats de la Recherche</h2>
+    <ul>
+        {% for resultat in resultats_recherche %}
+            <li>{{ resultat }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
